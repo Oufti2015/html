@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>sst.common.html</groupId>
 	<artifactId>html</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>SST HTML Creator</name>
 
 	<build>
@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>sst.common.output</groupId>
 			<artifactId>output</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
