@@ -4,6 +4,6 @@ public class HTMLParagraph extends AbstractHTMLElement {
 
     @Override
     protected String getTagString() {
-	return "P";
+        return "P";
     }
 }

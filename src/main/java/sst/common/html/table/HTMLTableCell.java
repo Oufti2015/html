@@ -5,31 +5,31 @@ import sst.common.html.AbstractHTMLElement;
 public class HTMLTableCell extends AbstractHTMLElement {
 
     public HTMLTableCell() {
-	super();
+        super();
     }
 
     @Override
     protected String getTagString() {
-	return "TD";
+        return "TD";
     }
 
     public HTMLTableCell colspan(int cs) {
-	setAttribute("colspan", "" + cs);
-	return this;
+        setAttribute("colspan", "" + cs);
+        return this;
     }
 
     public HTMLTableCell rowspan(int cs) {
-	setAttribute("rowspan", "" + cs);
-	return this;
+        setAttribute("rowspan", "" + cs);
+        return this;
     }
 
     public HTMLTableCell width(int width) {
-	setAttribute("width", "" + width + "%");
-	return this;
+        setAttribute("width", "" + width + "%");
+        return this;
     }
 
     public HTMLTableCell fullWidth() {
-	setAttribute("width", "100%");
-	return this;
+        setAttribute("width", "100%");
+        return this;
     }
 }

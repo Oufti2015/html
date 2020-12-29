@@ -4,7 +4,6 @@ public class HTMLThemeBreak extends AbstractHTMLElement {
 
     @Override
     protected String getTagString() {
-	return "HR";
+        return "HR";
     }
-
 }

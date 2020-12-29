@@ -7,44 +7,44 @@ public class HTMLTable extends AbstractHTMLElement {
     HTMLTableRow row = null;
 
     public HTMLTable() {
-	super();
+        super();
     }
 
     public HTMLTable caption(String caption) {
-	addChild(new HTMLCaption(caption));
-	return this;
+        addChild(new HTMLCaption(caption));
+        return this;
     }
 
     public HTMLTableRow row() {
-	if (null == row) {
-	    return newRow();
-	}
-	return row;
+        if (null == row) {
+            return newRow();
+        }
+        return row;
     }
 
     public HTMLTableRow newRow() {
-	row = new HTMLTableRow();
-	addChild(row);
-	return row;
+        row = new HTMLTableRow();
+        addChild(row);
+        return row;
     }
 
     public HTMLTable width(int width) {
-	setAttribute("width", "" + width + "%");
-	return this;
+        setAttribute("width", "" + width + "%");
+        return this;
     }
 
     public HTMLTable fullWidth() {
-	setAttribute("width", "100%");
-	return this;
+        setAttribute("width", "100%");
+        return this;
     }
 
     @Override
     protected String getTagString() {
-	return "TABLE";
+        return "TABLE";
     }
 
     public HTMLTable border(int border) {
-	setAttribute("border", "" + border);
-	return this;
+        setAttribute("border", "" + border);
+        return this;
     }
 }

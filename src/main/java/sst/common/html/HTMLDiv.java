@@ -20,6 +20,6 @@ public class HTMLDiv extends AbstractHTMLElement {
 
     @Override
     protected String getTagString() {
-	return "DIV";
+        return "DIV";
     }
 }

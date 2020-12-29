@@ -8,13 +8,13 @@ import sst.common.html.table.HTMLTableRow;
 public class HTMLOneRowTable extends HTMLTable {
 
     public HTMLOneRowTable(AbstractHTMLElement... elements) {
-	super();
-	HTMLTableRow row = new HTMLTableRow();
-	for (int i = 0; i < elements.length; i++) {
-	    HTMLTableCell cell = new HTMLTableCell();
-	    cell.addChild(elements[i]);
-	    row.addChild(cell);
-	}
-	addChild(row);
+        super();
+        HTMLTableRow row = new HTMLTableRow();
+        for (AbstractHTMLElement element : elements) {
+            HTMLTableCell cell = new HTMLTableCell();
+            cell.addChild(element);
+            row.addChild(cell);
+        }
+        addChild(row);
     }
 }

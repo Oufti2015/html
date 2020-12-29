@@ -6,16 +6,16 @@ public class HTMLScript extends AbstractHTMLElement {
 
     @Override
     protected String getTagString() {
-	return "SCRIPT";
+        return "SCRIPT";
     }
 
     public HTMLScript type(String type) {
-	setAttribute("type", type);
-	return this;
+        setAttribute("type", type);
+        return this;
     }
 
     public HTMLScript src(String src) {
-	setAttribute("src", src);
-	return this;
+        setAttribute("src", src);
+        return this;
     }
 }

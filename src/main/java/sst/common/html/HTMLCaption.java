@@ -16,6 +16,6 @@ public class HTMLCaption extends AbstractHTMLElement {
 
     @Override
     protected String getTagString() {
-	return "CAPTION";
+        return "CAPTION";
     }
 }
