@@ -21,7 +21,7 @@ public abstract class AbstractHTMLElement {
         StringBuilder header = new StringBuilder("<" + getTagString());
         for (Map.Entry<String, String> entry : attributes.entrySet()) {
             String value = entry.getValue();
-            header.append(" ").append(entry).append("=\"").append(value).append("\"");
+            header.append(" ").append(entry.getKey()).append("=\"").append(value).append("\"");
         }
         return header.append(">").toString();
     }
