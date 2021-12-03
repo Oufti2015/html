@@ -44,6 +44,13 @@ public class HTMLTableRow extends AbstractHTMLElement {
         return head;
     }
 
+    public HTMLTableCell newHead(String text) {
+        cell = new HTMLTableHeader();
+        addChild(cell);
+        cell.textContent(text);
+        return cell;
+    }
+
     public HTMLTableRow height(int h) {
         setAttribute("height", "" + h + "%");
         return this;
