@@ -22,10 +22,22 @@ public class HTMLTable extends AbstractHTMLElement {
         return row;
     }
 
+    public HTMLTableHeaderRow newHeader() {
+        HTMLTableHeaderRow header = new HTMLTableHeaderRow();
+        addChild(header);
+        return header;
+    }
+
     public HTMLTableRow newRow() {
         row = new HTMLTableRow();
         addChild(row);
         return row;
+    }
+
+    public HTMLTableFooterRow newFooter() {
+        HTMLTableFooterRow footer = new HTMLTableFooterRow();
+        addChild(footer);
+        return footer;
     }
 
     public HTMLTable width(int width) {

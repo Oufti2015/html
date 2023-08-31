@@ -52,7 +52,7 @@ public class HTMLTableRow extends AbstractHTMLElement {
     }
 
     public HTMLTableRow height(int h) {
-        setAttribute("height", "" + h + "%");
+        setAttribute("height", h + "%");
         return this;
     }
 
