@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class AbstractHTMLElement {
+public abstract class AbstractHTMLElement implements Container {
 
     @Getter
     private int tabulation = 0;
@@ -49,6 +49,7 @@ public abstract class AbstractHTMLElement {
         return result + getTrailer();
     }
 
+    @Override
     public AbstractHTMLElement addChild(AbstractHTMLElement child) {
         children.add(child);
         child.setTabulation(tabulation + 1);
